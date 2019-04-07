@@ -111,10 +111,18 @@ body{
     text-align: start;
 }
 
-.promotion_image{
-    margin: 0 1em 1em;
+.promotion_image_wrapper{
+    margin: 0 1em 1em; 
+    padding-bottom: 56.25%;
+    position: relative;
     width: 90%;
-    height: auto;
+}
+
+.promotion_image {
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    height: 100%;
 }
 
 .pilar{
