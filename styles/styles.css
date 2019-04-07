@@ -31,7 +31,7 @@ body{
 }
 
 .header_background{
-    height: 100%;
+    max-height: 60px;
     width: 100%;
     position: absolute;
 }
@@ -40,9 +40,14 @@ body{
     z-index: 1;
 }
 
-.logo, .menu{
+.menu{
     margin: 0;
     padding: 10px;
+}
+
+.logo{
+    padding: 0;
+    margin-top: 5px;
 }
 
 .search{
@@ -59,7 +64,7 @@ body{
 .hero{
     grid-area: hero;
     font-size: 22px;
-    margin-top: -18px;
+    margin-top: -22px;
 }
 
 .hero h1{
