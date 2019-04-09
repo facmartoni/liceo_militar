@@ -32,7 +32,54 @@
         <!-- Menu -->
 
         <nav class="navigator">
-            <ul>
+
+            <ul class="institucional">
+                <p>
+                    Institucional
+                </p>
+                <li>
+                    <a href="">
+                        - Oferta
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        - Autoridades
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        - Misión
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        - Dependencias
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        - COE
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        - Serv. Sanidad
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        - Evacuación
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        - Reseña
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="noticias">
                 <p>
                     Noticias
                 </p>
@@ -53,26 +100,71 @@
                 </li>
             </ul>
 
-            <ul>
+            <ul class="niveles">
+                    <p>
+                        Niveles
+                    </p>
+                    <li>
+                        <a href="">
+                            - Inicial
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            - Primario
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            - Secundario
+                        </a>
+                    </li>
+                </ul>
+            
+            <ul class="canciones">
                 <p>
-                    Niveles
+                    Canciones y marchas
                 </p>
                 <li>
                     <a href="">
-                        - Inicial
+                        - Liceo
                     </a>
                 </li>
                 <li>
                     <a href="">
-                        - Primario
+                        - Malvinas
                     </a>
                 </li>
                 <li>
                     <a href="">
-                        - Secundario
+                        - San Lorenzo
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        - Avenida de las Camelias
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        - Ejército Argentino
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        - Chasqui de Guerra
                     </a>
                 </li>
             </ul>
+
+            <a class="big_link contact" href="">
+                Contacto
+            </a>
+
+            <a class="big_link galeria" href="">
+                Galería
+            </a>
+          
         </nav>
 
         <!-- Header -->
@@ -173,13 +265,11 @@
             function showHide(){
                 if (navigator.classList.contains("is_active")){
                     navigator.classList.remove("is_active");
-                    container.classList.remove("is_active");
                     body.classList.remove("is_active");
                     document.getElementById('menu_button').src = "images/menu.svg";
                 }
                 else{
                     navigator.classList.add("is_active");
-                    container.classList.add("is_active");
                     body.classList.add("is_active");
                     document.getElementById('menu_button').src = "images/menu_active.svg";
                 }
