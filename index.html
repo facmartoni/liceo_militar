@@ -28,13 +28,60 @@
 
 <body>
     <div class="container">
+
+        <!-- Menu -->
+
+        <nav class="navigator">
+            <ul>
+                <p>
+                    Noticias
+                </p>
+                <li>
+                    <a href="">
+                        - NewsFeed
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        - Docentes
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        - Finanzas
+                    </a>
+                </li>
+            </ul>
+
+            <ul>
+                <p>
+                    Niveles
+                </p>
+                <li>
+                    <a href="">
+                        - Inicial
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        - Primario
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        - Secundario
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
         <!-- Header -->
 
         <header class="header">
             <img class="header_background" src="images/header_background.svg" alt="header_background">
             <div class="menu_container">
                 <figure class="menu">
-                    <img src="images/menu.svg" alt="menu">
+                    <img id="menu_button" src="images/menu.svg" alt="menu">
                 </figure>
             </div>
             <div class="logo_container">
@@ -101,6 +148,44 @@
             </div>
         </footer>
 
+        <!-- Scripts -->
+
+        <script>
+            const navigator = document.querySelector(".navigator");
+            const container = document.querySelector(".container");
+            const body = document.querySelector("body");
+            const menuButton = document.querySelector(".menu");
+            const pc = window.matchMedia("screen and (min-width: 320px)");
+    
+            pc.addListener(validation);
+    
+            function validation(event){
+                if(event.matches){
+                    menuButton.addEventListener("click", showHide);
+                }
+                else{
+                    menuButton.removeEventListener("click", showHide);
+                }
+            }
+    
+            validation(pc);
+    
+            function showHide(){
+                if (navigator.classList.contains("is_active")){
+                    navigator.classList.remove("is_active");
+                    container.classList.remove("is_active");
+                    body.classList.remove("is_active");
+                    document.getElementById('menu_button').src = "images/menu.svg";
+                }
+                else{
+                    navigator.classList.add("is_active");
+                    container.classList.add("is_active");
+                    body.classList.add("is_active");
+                    document.getElementById('menu_button').src = "images/menu_active.svg";
+                }
+            }
+        </script>
+        
     </div>
 </body>
 </html>

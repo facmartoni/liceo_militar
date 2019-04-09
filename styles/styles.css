@@ -6,6 +6,10 @@ body{
     background: #f7f8f9;
 }
 
+body.is_active{
+    overflow: hidden;
+}
+
 .container{
     font-size: 10px; 
     display: grid;
@@ -17,6 +21,33 @@ body{
                          "footer";
 }
 
+.container.is_active{
+    grid-template-columns: 1fr;
+    grid-template-rows: 100vh 6em 25em 1fr 19em;
+    grid-template-areas: "navigator"
+                         "header"
+                         "hero"
+                         "promotion"
+                         "footer";
+}
+
+/* Menu */
+
+.navigator{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: -100vh;
+    background: #182D30;
+    display: flex;
+    z-index: 3;
+}
+
+.navigator.is_active{
+    grid-area: navigator;
+    top: 0;
+}
+
 /* Header */
 
 .header{
@@ -26,7 +57,7 @@ body{
     justify-content: space-between; 
     align-items: flex-start; 
     position: fixed;
-    z-index: 3;
+    z-index: 4;
     background: transparent;
 }
 
@@ -65,6 +96,7 @@ body{
     grid-area: hero;
     font-size: 22px;
     margin-top: -22px;
+    position: relative;
 }
 
 .hero h1{
@@ -75,7 +107,7 @@ body{
     text-transform: uppercase;
     position: absolute;
     z-index: 1;
-    top: 220px;
+    top: 70%;
     margin: 1em 1em;
     font-weight: 900;
 }
@@ -355,10 +387,6 @@ body{
 
     .container{
         grid-template-rows: 7em 25em 1fr 10em;
-    }
-
-    .header{
-        position: relative;
     }
 
     .header_background{
