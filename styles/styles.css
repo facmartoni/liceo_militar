@@ -30,7 +30,7 @@ body.is_active{
     padding-bottom: 20px; 
     box-sizing: border-box;
     position: fixed;
-    top: -100vh;
+    top: -120vh;
     background: #182D30;
     z-index: 3;
     transition: .3s;
