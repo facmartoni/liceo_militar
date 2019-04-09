@@ -10,4 +10,4 @@ The design was made in *Adobe Xd*, using icons from icomoon.io. The images and m
 
 ## Code
 
-The code basically contains HTML, advanced CSS and JS
+The code basically contains HTML, advanced CSS and JS. It was made by the "Mobile First" methodology.
