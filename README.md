@@ -1,6 +1,6 @@
 # Liceo Militar Web
 
-# https://facmartoni.github.io/liceo_militar/
+## https://facmartoni.github.io/liceo_militar/
 
 This is a webpage proposal for "Liceo Militar General Gregorio Araoz de Lamadrid", a military school from Tucumán, Argentina. It´s being completely built by me, and contains HTML, CSS (using grid and flexbox) and JS. A fully artwork of Frontend (and futurely of Backend too 😉).
 
