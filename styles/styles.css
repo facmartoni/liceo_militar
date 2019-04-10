@@ -26,8 +26,7 @@ body.is_active{
 .navigator{
     width: 100vw;
     height: 100vh;
-    padding-top: 50px; 
-    padding-bottom: 20px; 
+    padding-top: 60px; 
     box-sizing: border-box;
     position: fixed;
     top: -120vh;
@@ -43,6 +42,11 @@ body.is_active{
                          "niveles institucional"
                          "canciones canciones"
                          "contact galeria";
+    overflow: scroll;
+}
+
+.navigator.is_active{
+    top: 0;
 }
 
 .noticias{
@@ -57,10 +61,6 @@ body.is_active{
     grid-area: niveles;
 }
 
-.canciones{
-    grid-area: canciones;
-}
-
 .contact{
     grid-area: contact;
 }
@@ -69,20 +69,23 @@ body.is_active{
     grid-area: galeria;
 }
 
-.navigator.is_active{
-    top: 0;
-}
-
 .navigator ul{
     list-style: none;
-    padding: 0 2em;
+    padding: 0 5vw;
     margin: 0;
+    margin-bottom: 20px;
+}
+
+.canciones{
+    grid-area: canciones;
+    margin-bottom: 0 !important;
 }
 
 .navigator ul p{
+    margin: 0;
     color: #E5B800;
     font-family: 'Lato', sans-serif;
-    font-size: 16px;
+    font-size: 5vw;
     font-weight: 600;
     text-transform: uppercase;
     border-bottom: 1px solid grey;
@@ -91,7 +94,7 @@ body.is_active{
 
 .navigator ul li a{
     font-family: 'Lato', sans-serif;
-    font-size: 15px;
+    font-size: 5vw;
     font-weight: 600;
     line-height: 1.5em;
     text-decoration: none;
@@ -99,11 +102,12 @@ body.is_active{
 }
 
 .big_link{
+    padding: 2vw 0;
+    align-self: center;
     color: white;
-    margin-top: 10px; 
-    padding-left: 30px;
+    padding-left: 6vw;
     font-family: 'Lato', sans-serif;
-    font-size: 17px;
+    font-size: 5vw;
     font-weight: 600;
     text-decoration: underline white;
     text-transform: uppercase;
@@ -315,16 +319,30 @@ body.is_active{
 /* +++++++++++++++++ Media queries +++++++++++++++++ */
 
 @media screen and (min-width: 370px){
-
+    
     /* Header */
 
     .logo{
         margin-top: 8px;
     }
+
+    /* Hero */
+
+    .hero{
+        font-size: 26px;
+    }
+
+    .hero h1{
+        top: 65%;
+    }
     
 }
 
 @media screen and (min-width: 410px){
+
+    .container{
+        grid-template-rows: 6em 30em 1fr 19em;
+    }
 
     /* Header */
 
@@ -336,15 +354,31 @@ body.is_active{
         width: 80px;
     }
 
+    /* Menu */
+
+    .navigator{
+        padding-top: 80px;
+    }
+
+    /* Hero */
+
+    .hero{
+        font-size: 28px;
+    }
+
+    .hero h1{
+        top: 65%;
+    }
+
 }
 
 @media screen and (min-width: 480px){
+    
+    .container{
+        grid-template-rows: 7em 35em 1fr 19em;
+    }
 
     /* Header */
-
-    .container{
-        grid-template-rows: 7em 25em 1fr 19em;
-    }
 
     .header_background{
         max-height: 70px;
@@ -370,15 +404,31 @@ body.is_active{
         width: 41px;
     }
 
+    /* Hero */
+
+    .hero{
+        font-size: 32px;
+    }
+
+    .hero h1{
+        top: 65%;
+    }
+
 }
 
 @media screen and (min-width: 600px){
 
-    /* Footer */
-
     .container{
-        grid-template-rows: 7em 25em 1fr 10em;
+        grid-template-rows: 7em 40em 1fr 10em;
     }
+
+    /* Hero */
+
+    .hero{
+        font-size: 38px;
+    }
+
+    /* Footer */
 
     .footer_container{    
         grid-template-rows: 1fr;
@@ -404,6 +454,20 @@ body.is_active{
 
 @media screen and (min-width: 768px){
     
+    /* Menu */
+
+    .navigator ul p{
+        font-size: 4vw;
+    }
+
+    .navigator ul li a{
+        font-size: 4vw;
+    }
+
+    .big_link{
+        font-size: 4vw;
+    }
+
     /* Header */
 
     .logo{
@@ -426,6 +490,16 @@ body.is_active{
         width: 51px;
     }
 
+    /* Hero */
+
+    .hero{
+        font-size: 52px;
+    }
+
+    .hero h1{
+        top: 50%;
+    }
+
     /* Footer */
 
     .info{
@@ -436,19 +510,107 @@ body.is_active{
 
 @media screen and (min-width: 1024px){
     
-    /* Header */
+    /* Menu */
 
+    .navigator ul p{
+        font-size: 3vw;
+    }
+
+    .navigator ul li a{
+        font-size: 3vw;
+    }
+
+    .big_link{
+        font-size: 3vw;
+    }
+
+    /* Hero */
+
+    .hero{
+        font-size: 56px;
+    }
+
+    .hero h1{
+        top: 50%;
+    }
 
 
 }
 
 @media screen and (min-width: 1280px){
-    
-    /* Header */
+
+    body.is_active{
+        overflow: auto;
+    }
 
     .container{
-        grid-template-rows: 7em 25em 1fr 10em;
+        grid-template-rows: 7em 50em 1fr 10em;
     }
+
+    .container.is_active{
+        font-size: 10px; 
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        grid-template-areas: "navigator header"
+                             "navigator hero"
+                             "navigator promotion"
+                             "navigator footer";
+    }
+    
+    /* Menu */
+
+    .navigator{
+        grid-area: navigator;
+        padding-top: 70px;
+        width: 200px;
+        height: 100vh;
+        position: fixed;
+        left: -210px;
+        top: 0;
+        z-index: 3;
+        display: grid;
+        align-items: center;
+        justify-items: start;
+        grid-template-columns: 1fr;
+        grid-template-areas: "noticias"
+                             "institucional"
+                             "niveles"
+                             "canciones"
+                             "contact"
+                             "galeria";
+        overflow: hidden;
+        transition: none;
+    }
+    
+    .navigator.is_active{
+        left: 0;
+    }
+
+    .navigator ul{
+        padding: 0;
+        margin-left: 1em;
+        margin-bottom: 15px;
+    }
+    
+    .canciones{
+        margin-bottom: 0 !important;
+    }
+    
+    .navigator ul p{
+        font-size: 14px;
+    }
+    
+    .navigator ul li a{
+        font-size: 12px;
+    }
+    
+    .big_link{
+        padding: 10px 0;
+        padding-left: 1em;
+        font-size: 12px;
+    }
+
+    /* Header */
 
     .header_background{
         max-height: 80px;
@@ -460,6 +622,16 @@ body.is_active{
 
     .logo img{
         width: 100px;
+    }
+
+    /* Hero */
+
+    .hero{
+        font-size: 80px;
+    }
+
+    .hero h1{
+        top: 45%;
     }
 
 }
