@@ -173,8 +173,13 @@ body.is_active{
     position: absolute;
     z-index: 1;
     top: 70%;
+    opacity: 0;
     margin: 1em 1em;
     font-weight: 900;
+    animation-name: hero_animation; 
+    animation-duration: 1.5s; 
+    animation-delay: 500ms; 
+    animation-fill-mode: forwards;
 }
 
 .hero_image{
@@ -370,6 +375,12 @@ body.is_active{
         top: 65%;
     }
 
+    /* Promotion */
+
+    .promotion{
+        font-size: 22px;
+    }
+
 }
 
 @media screen and (min-width: 480px){
@@ -414,6 +425,12 @@ body.is_active{
         top: 65%;
     }
 
+    /* Promotion */
+
+    .promotion{
+        font-size: 26px;
+    }
+
 }
 
 @media screen and (min-width: 600px){
@@ -448,6 +465,12 @@ body.is_active{
 
     .instagram img, .facebook img{
         width: 30px;
+    }
+
+    /* Promotion */
+
+    .promotion{
+        font-size: 32px;
     }
 
 }
@@ -498,6 +521,12 @@ body.is_active{
 
     .hero h1{
         top: 50%;
+    }
+
+    /* Promotion */
+
+    .promotion{
+        font-size: 36px;
     }
 
     /* Footer */
@@ -622,9 +651,14 @@ body.is_active{
     .logo{
         margin-top: 10px;
     }
-
+    
+    .logo:hover .logo_image{
+        width: 105px; 
+    }
+    
     .logo img{
-        width: 100px;
+        transition: .3s; 
+        width: 97px;
     }
 
     /* Hero */
@@ -634,7 +668,16 @@ body.is_active{
     }
 
     .hero h1{
-        top: 45%;
+        top: 45%; 
     }
 
+}
+
+@keyframes hero_animation{
+    from{
+        transform: translateY(-.35em)
+    }
+    to{
+        opacity: 1;
+    }
 }
