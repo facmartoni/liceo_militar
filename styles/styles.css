@@ -234,6 +234,8 @@ body.is_active{
     width: 90%;
 }
 
+/* Si en algún momento hacemos las modal images usar código de abajo */
+
 /* .promotion_image_wrapper:enabled{
     width: 100vw;
     height: 100vh;
