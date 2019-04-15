@@ -695,21 +695,21 @@ body.is_active{
 
     /* Header */
 
-    .header_background{
+    /* .header_background{
         max-height: 80px;
     }
 
     .logo{
         margin-top: 10px;
-    }
+    } */
     
     .logo:hover .logo_image{
-        width: 105px; 
+        width: 95px; 
     }
     
     .logo img{
         transition: .3s; 
-        width: 97px;
+        width: 90px;
     }
 
     /* Hero */
