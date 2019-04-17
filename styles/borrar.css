@@ -1,0 +1,80 @@
+.main{
+    grid-area: main;
+    display: flex; 
+    align-items: center; 
+    flex-direction: column;
+    text-align: center; 
+    font-size: 24px; 
+}
+
+.main_title, .main_subtitle, .main_estrofa_title{
+    color: #111224;
+    font-family: 'Lato', sans-serif;
+    line-height: 2em; 
+    font-size: 1em; 
+    font-weight: 600; 
+    border-bottom: 1px solid #9A9A9A; 
+    align-self: flex-start; 
+    margin: 0; 
+    margin-top: 1em; 
+    margin-left: 5%;
+    width: 80%;
+    text-align: start; 
+}
+
+.main_subtitle{ 
+    font-size: .8em; 
+}
+
+.main_estrofa_title{
+    font-size: .7em; 
+    align-self: center; 
+    border: 0; 
+    text-align: center; 
+    margin-left: 0; 
+}
+
+.main_versos{
+    font-family: 'Lato', sans-serif;
+    color: #5e5e5e; 
+    font-size: .66em; 
+    font-weight: 100; 
+    line-height: 1.7em; 
+}
+
+.main_detalles{
+    font-family: 'Lato', sans-serif;
+    color: #5e5e5e; 
+    font-size: .6em; 
+    font-weight: 100; 
+    align-self: flex-start;
+    text-align: start; 
+    margin-left: 5%;
+    margin-bottom: 2em; 
+}
+
+.main_detalles strong{
+    color: #111224; 
+    font-weight: 600; 
+}
+
+.main_figure{
+    width: 90%;
+    max-width: 854px;
+}
+
+.main_video_container{
+    position: relative; 
+    background: rgb(3, 3, 3); 
+    padding-top: 56.25%;
+}
+
+.main_video{
+    position: absolute;
+    top: 0; 
+    bottom: 0;
+    left: 0; 
+    right: 0; 
+    width: 100%;
+    height: 100%;
+}
