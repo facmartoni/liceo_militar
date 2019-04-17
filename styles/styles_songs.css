@@ -324,6 +324,12 @@ body.is_active{
     .logo{
         margin-top: 8px;
     }
+
+    /* Main */
+
+    .main{
+        font-size: 26px; 
+    }
     
 }
 
@@ -391,6 +397,12 @@ body.is_active{
         grid-template-rows: 7em 1fr 10em;
     }
 
+    /* Main */
+
+    .main{
+        font-size: 28px; 
+    }
+
     /* Footer */
 
     .footer_container{    
@@ -453,6 +465,12 @@ body.is_active{
         width: 51px;
     }
 
+    /* Main */
+
+    .main{
+        font-size: 30px; 
+    }
+
     /* Footer */
 
     .info{
@@ -477,7 +495,18 @@ body.is_active{
         font-size: 3vw;
     }
 
-    /* Hero */
+    /* Main */
+
+    .main{
+        font-size: 32px; 
+    }
+
+    .main_title, .main_subtitle, .main_detalles{
+        align-self: center; 
+        text-align: center; 
+        margin-left: 0; 
+        width: 50%; 
+    }
 
 }
 
@@ -564,6 +593,16 @@ body.is_active{
     .logo img{
         transition: .3s; 
         width: 90px;
+    }
+
+    /* Main */
+
+    .main{
+        font-size: 34px; 
+    }
+
+    .main_title, .main_subtitle, .main_detalles{ 
+        width: 30%; 
     }
 
 }
