@@ -76,9 +76,12 @@ body.is_active{
     margin-bottom: 20px;
 }
 
+.navigator ul:last-child{
+    padding-bottom: 30px;
+}
+
 .canciones{
     grid-area: canciones;
-    margin-bottom: 0 !important;
 }
 
 .navigator ul p{
