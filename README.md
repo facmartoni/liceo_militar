@@ -9,3 +9,18 @@ The design was made in *Adobe Xd*, using icons from icomoon.io. The images and m
 ## Code
 
 The code basically contains HTML, advanced CSS and JS. It was made by the "Mobile First" methodology.
+
+### Special thanks to the beta tester group
+
+🧑 Mauricio Fernandez
+🧑 Bricio Perez
+🧑 Jesus Pasteris
+🧑 Juan González
+🧑 Gastón González
+🧑 Miguel Maiolani
+🧑 Braian Castro
+🧑 Jesus Pasteris
+🧑 Geovany Gonzalez
+🧑 Jeremías Mastafa
+🧑 Brian Wiernes
+👩 Lourdes Décima
