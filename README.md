@@ -19,7 +19,6 @@ The code basically contains HTML, advanced CSS and JS. It was made by the "Mobil
 🧑 Gastón González
 🧑 Miguel Maiolani
 🧑 Braian Castro
-🧑 Jesus Pasteris
 🧑 Geovany Gonzalez
 🧑 Jeremías Mastafa
 🧑 Brian Wiernes
