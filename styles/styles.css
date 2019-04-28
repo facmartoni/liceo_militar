@@ -231,6 +231,10 @@ body.is_active{
     width: 100%;
 }
 
+.promotion_general_wrapper:last-child{
+    margin-bottom: 1em;
+}
+
 .promotion_image_wrapper{
     margin: 0 .8em 1em; 
     padding-bottom: 56.25%;
@@ -588,6 +592,10 @@ body.is_active{
         grid-template-areas: "image_1 image_2"
                              "image_1 image_3";
         justify-content: center;
+    }
+
+    .promotion_general_wrapper:last-child{
+        margin-bottom: 2em;
     }
 
     .wrapper_2, .wrapper_3, .wrapper_1{
